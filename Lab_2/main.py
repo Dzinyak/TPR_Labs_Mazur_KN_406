@@ -24,5 +24,5 @@ Cb = p33 * (-m2 + 4 * (p31 * d21 + p32 * d22)) + p34 * 0
 results = pd.DataFrame(list(zip(['Варіант А', 'Варіант Б', 'Варіант Ва', 'Варіант Вб', ], [A, B, Ca, Cb])))
 results.columns = ['Стратегія', 'Очікуваний дохід']
 print(results)
-results.to_csv(r'Results.csv')
+results.to_csv(r'Results.txt')
 print('Найкращим є:', results['Очікуваний дохід'].max())
